@@ -8,3 +8,5 @@ As a complete beginner, I recommend the following path through the files:
 
 1. Printing Basics
 2. Operators
+3. Strings
+4. Integers and Floats
