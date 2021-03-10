@@ -126,7 +126,7 @@ print(dir(str))
 
 # A method is an action that can be performed on a variable
 # Each type (str, int, bool etc..) has its own set of methods
-# String methods don't 'change' the original variable instead, they return new data!
+# String methods don't 'change' the original variable, instead they return new data!
 
 drink = 'milk shake'
 
