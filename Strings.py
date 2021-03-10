@@ -11,8 +11,7 @@ name = 'James'
 
 # Strings need to have speech marks either side of them to make them into a string!
 
-# Strings need to have the same type of speech marks either
-# side, I use single quotes, but double speech marks also work well.
+# Strings need to have the same type of speech marks either side, I use single quotes, but double speech marks also work well.
 
 
 ## Multiline strings can also be created using triple quotes
