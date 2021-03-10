@@ -235,8 +235,7 @@ print(serial_number.isdigit())
 print(serial_number_v2.isdigit())
 
 
-# The str.isalpha() method returns True if every character
-# is a letter, (no spaces, punctuation or numbers!)
+# The str.isalpha() method returns True if every character is a letter, (no spaces, punctuation or numbers!)
 
 favourite_language = 'Python'
 print(favourite_language.isalpha())
