@@ -1,7 +1,12 @@
 ### I have left all the print statements uncommented!
 ### You may wish to go through and comment out parts
 ### that you aren't currently looking at
+### This guide is by no means super detailed! It's aimed purely at beginners
+### to show you absolute basics.
+
 ### Enjoy :)
+
+
 
 # This is a string!
 name = 'James'
@@ -122,6 +127,7 @@ print('\n\n')
 # Calling the dir(directory) function
 # shows all the methods you can do with a string.
 # You can pass almost anything into the dir() function!
+# In this basic guide, I've covered a small selection of useful methods
 
 print(dir(str))
 
@@ -154,3 +160,120 @@ print(drink_lowered)
 # not each individual word!
 drink_capitalized = drink.capitalize()
 print(drink_capitalized)
+
+
+# Splitting the string apart into a list using split
+# by default, this splits by any spaces in the string,
+# but a character can also be specified,
+# this is called the 'delimiter'
+split_drink = drink.split()
+print(split_drink)
+
+
+# Splitting the string by the dash
+fullname = 'Harry-James-Potter'
+split_name = fullname.split('-')
+print(split_name)
+
+
+# Replacing characters in the string with alternatives
+# This example replaces the small e with a big one!
+lowered_vowels = 'CHeSTeR'
+uppered_vowels = lowered_vowels.replace('e', 'E')
+print(uppered_vowels)
+
+
+# Strip is used to remove leading and trailing whitespaces
+url = '  google  '
+website = 'www.' + url.strip() + '.com'
+print(website)
+
+
+print('\n\n')
+
+#### String Methods 2 ####
+# I've added the next couple of methods as a different section,
+# simply because they return True or False, rather than returning a new string
+
+# These methods evaluate the string in a special way, and
+# if the condition is true, then the boolean 'True' is returned.
+
+
+# the string.islower() returns True if the string in question
+# contains only lower case characters. in this case, the variable
+# 'valid' contains a value of True
+
+username = 'jamescuk'
+valid = username.islower()
+print(valid)
+
+# lets do this again with a slice of the string
+# This is asking if the first 4 characters in the string are lower case
+first_4_chars_valid = username[:4].islower()
+print(first_4_chars_valid)
+
+
+# lets do it in a simple if/else statement!
+if username.islower():
+    print(username, 'Is valid and good to go!')
+else:
+    print(username, 'is not valid..')
+
+
+# All of the operations above can also be repeated with the methods to follow,
+# they just look for different things!
+
+day_of_week = 'Wednesday'
+
+# the str.istitle() method returns True only if the string is in title case
+
+# (has a single capital letter only at index 0)
+is_valid_day = day_of_week.istitle()
+print(is_valid_day)
+
+
+# the str.isupper() method returns True if word is entirely in upper case!
+word = 'HEY'
+is_angry = word.isupper()
+print(is_angry)
+
+## The str.isdigit() method returns True if every element is a number
+serial_number = '123456' # This is True
+serial_number_v2 = 'onetwo3456' # This is False
+print(serial_number.isdigit())
+print(serial_number_v2.isdigit())
+
+
+# The str.isalpha() method returns True if every character
+# is a letter, (no spaces, punctuation or numbers!)
+
+favourite_language = 'Python'
+print(favourite_language.isalpha())
+
+
+print('\n\n')
+#### Some useful built in functions ###
+
+# len()
+# This is used to return the length of the string
+
+string_a = 'cheese'
+print(string_a, 'has', len(string_a), 'characters')
+
+# sorted()
+# This returns a list, but will sort the characters alphabetically
+print(sorted(string_a))
+
+
+# int(), float()
+# Converts the string to an int or float respectively
+# The string must be in the correct format, or a ValueError will occur
+
+# b is the integer version of a!
+a = '55'
+b = int(a)
+print(b)
+
+# c is the float version of a
+c = float(a)
+print(c)
