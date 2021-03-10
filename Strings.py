@@ -238,7 +238,7 @@ print(favourite_language.isalpha())
 
 
 print('\n\n')
-#### Some useful built in functions ###
+#### Some useful built in functions ####
 
 # len()
 # This is used to return the length of the string
