@@ -72,10 +72,8 @@ print(name[-1])
 print('\n\n')
 #### Slicing ####
 
-# Slicing is accessing a portion of the string
-# instead of just one element
-# Slicing can be done using 3 commands inside
-# the square brackets
+# Slicing is accessing a portion of the string instead of just one element
+# Slicing can be done using 3 commands inside the square brackets
 # [start: stop: step]
 
 # start: which position to start at
@@ -109,8 +107,7 @@ print(city[:8:3])
 print('\n\n')
 #### Joining Strings Together ####
 
-# Strings can be joined together,
-# this is called 'Concatenation'
+# Strings can be joined together, this is called 'Concatenation'
 
 string1 = 'abc'
 string2 = 'def'
@@ -124,8 +121,7 @@ print(another_new_string)
 print('\n\n')
 #### String Methods ####
 
-# Calling the dir(directory) function
-# shows all the methods you can do with a string.
+# Calling the dir(directory) function shows all the methods you can do with a string.
 # You can pass almost anything into the dir() function!
 # In this basic guide, I've covered a small selection of useful methods
 
@@ -134,8 +130,7 @@ print(dir(str))
 
 # A method is an action that can be performed on a variable
 # Each type (str, int, bool etc..) has its own set of methods
-# String methods don't 'change' the original variable
-# instead, they return new data!
+# String methods don't 'change' the original variable instead, they return new data!
 
 drink = 'milk shake'
 
@@ -156,16 +151,13 @@ drink_lowered = drink.lower()
 print(drink_lowered)
 
 # Returning a capitalized version to a new variable
-# Only capitalizes the first letter of the entire string
-# not each individual word!
+# Only capitalizes the first letter of the entire string not each individual word!
 drink_capitalized = drink.capitalize()
 print(drink_capitalized)
 
 
 # Splitting the string apart into a list using split
-# by default, this splits by any spaces in the string,
-# but a character can also be specified,
-# this is called the 'delimiter'
+# by default, this splits by any spaces in the string, but a character can also be specified, this is called the 'delimiter'
 split_drink = drink.split()
 print(split_drink)
 
