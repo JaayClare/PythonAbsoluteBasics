@@ -17,7 +17,7 @@ food_two = ''
 print(bool(food), bool(food_two))
 
 
-# Any float/integer that is 0, or 0.0 if False, otherwise its True!
+# Any float/integer that is 0, or 0.0 is False, otherwise its True!
 g_int= 0
 h_int = 10
 # This shows False then True
