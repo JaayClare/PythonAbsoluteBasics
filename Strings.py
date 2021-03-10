@@ -2,7 +2,7 @@
 ### You may wish to go through and comment out parts
 ### that you aren't currently looking at
 ### This guide is by no means super detailed! It's aimed purely at beginners
-### to show you absolute basics.
+### to show you the absolute basics.
 
 ### Enjoy :)
 
