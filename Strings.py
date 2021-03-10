@@ -212,8 +212,7 @@ else:
     print(username, 'is not valid..')
 
 
-# All of the operations above can also be repeated with the methods to follow,
-# they just look for different things!
+# All of the operations above can also be repeated with the methods to follow, they just look for different things!
 
 day_of_week = 'Wednesday'
 
