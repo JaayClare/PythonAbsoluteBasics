@@ -106,7 +106,7 @@ print('\n\n')
 
 # the pow() function raises one number to the power of another
 # The first number is the 'Base', the second is the 'Exponent'
-# So.. 10 to the the power of 5.. (10 is the base, 5 is the exponent) = 10 x 10 x 10 x 10 x 10
+# So.. 10 to the power of 5.. (10 is the base, 5 is the exponent) = 10 x 10 x 10 x 10 x 10
 
 print(pow(10, 5))
 
