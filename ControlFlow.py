@@ -21,7 +21,7 @@ if x > y:
 
 
 
-# The Boolean Operators 'and' or  'or' can also be used to check more complex conditions
+# The Boolean Operators 'and' or 'or' can also be used to check more complex conditions
 
 name = 'James'
 age = 30
