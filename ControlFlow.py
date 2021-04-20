@@ -44,8 +44,6 @@ else:
     print('Oh dear..') # Runs if the 'if' condition is True
 
 
-
-
 # To really make control flow more interesting and offer more pathways
 # the concept of 'if, elif, else' can be introduced.
 # This allows for more conditions to be looked at, rather than 1!
