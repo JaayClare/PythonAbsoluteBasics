@@ -66,11 +66,9 @@ str_float = '10.0'
 # The conversion to float is ok because the string is properly formed
 new_float = float(str_float)
 
+
 # the example below is an incorrect conversion, so a ValueError will be raised
-
-
 # bad_str_float = 'ten point five'
-# The conversion to float is ok because the string is properly formed
 # new_bad_float = float(bad_str_float)
 
 
@@ -80,6 +78,3 @@ try:
     new_bad_float = float(bad_str_float)
 except ValueError:
     print('Conversion failed')
-
-
-    
