@@ -11,3 +11,12 @@ As a complete beginner, I recommend the following path through the files:
 3. Strings
 4. Integers and Floats
 5. Control Flow
+6. Try and Except
+7. Lists
+8. Tuples
+9. Dictionaries
+10. Sets
+11. For Loops
+12. While Loops
+13. Built in Functions
+14. User Defined Functions
