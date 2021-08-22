@@ -74,5 +74,80 @@ name = 'Alex'
 if name in names_ages:
     print(names_ages[name])
 
-
+print('\n\n')
 ############################
+# Methods to remove items
+
+states = {'New York' : 'NY',
+          'Maine' : 'ME',
+          'Vermont': 'VT',
+          'California': 'CA'}
+
+
+# dict.pop(key) will look for the key, remove it and its value,
+popped = states.pop('New York')
+print(popped, '\n') # Contains the popped value
+
+
+# dict.popitem() will remove and also return the most recently
+# added key/value pair.
+print(states.popitem())
+
+
+# dict.clear will remove all contents from the dictionary, leaving it blank
+states.clear()
+
+
+print('\n\n')
+##################################
+# Methods to safely get items
+
+
+
+capitals = {'England' : 'London',
+            'France' : 'Paris',
+            'Japan' : 'Tokyo'}
+
+
+# dict.get(key) will try and retrive the key if it exists,
+# if it doesn't then a value of None is returned.
+
+# This is a great way of accessing a key which may not exist!
+print(capitals.get('England'))
+
+# This example shows how a second argument can be used, providing an
+# alternate return value instead!
+returned_val = capitals.get('Germany', 'Sorry, Country not in dict.')
+print(returned_val)
+
+
+# dict.setdefault(key, val) can be used for accessing or setting a new key/value
+# with the following rule..
+
+# if the key already exists, then leave it be!
+# but if the key doesn't exist, then set it.
+
+# In this case, Germany did not exist, so we set its key/value
+capitals.setdefault('Germany', 'Berlin')
+
+
+# In this case, Japan does exist, so we ignore it
+capitals.setdefault('Japan', 'Tokyo City')
+
+
+print(capitals)
+
+
+
+########################################
+
+## Lastly, the update method. Which is a new addition to Python
+
+# dict.update(newdict)
+# It updates the keys/values in the first dictionary with the keys and values in the second.
+a = {'A' : 100, 'B': 200}
+b = {'C' : 24,  'B' : 125}
+
+print('Before', a)
+a.update(b)
+print('After', a)
