@@ -85,6 +85,7 @@ states = {'New York' : 'NY',
 
 
 # dict.pop(key) will look for the key, remove it and its value,
+# then return its value.
 popped = states.pop('New York')
 print(popped, '\n') # Contains the popped value
 
