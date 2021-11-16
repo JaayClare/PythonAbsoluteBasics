@@ -93,5 +93,3 @@ floats = [1.0, 2.0, 3.0, 4.0, 5.0]
 floats_copy = floats.copy() # Copying the floats list to a new variable
 # Whatever is done to 'floats_copy' will be independent of the original list
 # because they are unlinked!
-
-print('\n\n')
