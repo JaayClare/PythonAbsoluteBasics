@@ -3,10 +3,26 @@
 ### This guide is by no means super detailed! It's aimed purely at beginners to show the absolute basics.
 
 
-
-
 numbers = [10,20,30,40,50]
 
+
+# Access the 0'th element
+# print(numbers[0])
+
+# Adds elements 1 and 3
+# print(numbers[1] + numbers[3])
+
+# Setting element 0 to 100
+numbers[0] = 100
+
+# Setting element 1 to element 2 multiplied by 2
+numbers[1] = numbers[2] * 2
+
+
+### Functions & lists ###
+cities = ['chester', 'london', 'liverpool', 'glasgow']
+print(len(cities))
+print(min(cities), max(cities))
 
 ### Adding Elements ###
 # append: Adds one element to the end of the list
@@ -42,8 +58,11 @@ print('Number {} appears first at position {}\n'.format(elem, position_of_elemen
 # Note: clear removes all element and keeps the empty list,
 # the del() function deletes the entire reference to the list
 
-removed_elem = numbers.pop() # Removes the last element from numbers and gives it to the removed_elem variable
-first_elem = numbers.pop(0) # Removes first element from numbers and gives it to the first_elem variable
+# Removes the last element from numbers and gives it to the removed_elem variable
+removed_elem = numbers.pop()
+
+ # Removes first element from numbers and gives it to the first_elem variable
+first_elem = numbers.pop(0)
 
 print('Removed Element(last): ', removed_elem)
 print('Removed Element(first): ', first_elem)
@@ -69,6 +88,7 @@ print('Numbers after the clear method has been ran:', numbers)
 # Note: 'in-place' means to modify the original without making a new copy
 
 letters = ['A', 'C', 'D', 'M', 'B', 'L']
+
 print('Letters before any changes:', letters)
 
 letters.reverse() # Reverses the order of the list permanently

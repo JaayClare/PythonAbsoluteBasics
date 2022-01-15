@@ -6,11 +6,14 @@
 # A set is created using curly braces
 numbers = {10,32,12,6,5,4}
 
+# An empty set is created by calling the set function
+empty_set = set()
+print(empty_set)
+
 
 # In this set, the duplicate 1's are removed
 a = {1,1,1,1,1,2,3,4}
 print(a)
-
 
 # Ordering does not matter with sets
 print({1,2,3} == {3,2,1}) # True
@@ -70,3 +73,14 @@ group = {'Jo', 'Ian'}
 
 print(group.issubset(names)) # True
 print(names.issuperset(group)) # True
+
+
+##############################
+# letters starts off as a list with duplicates
+letters = list('aabbccdd')
+print('pre:', letters)
+
+# Converting from list -> set -> list
+letters = list(set(letters))
+
+print('post:', letters)

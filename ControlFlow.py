@@ -18,6 +18,13 @@ if x > y:
 # A condition can also be evaluated inside a print statement
 #print(x > y) # This shows True!
 
+password = 'yes123'
+saved_password = 'Yes1234'
+
+if password == saved_password:
+    print('Looks good!')
+else:
+    print('Passwords do not match')
 
 
 
@@ -53,7 +60,7 @@ else:
 # If any of the elifs are True then this is also when the block ends
 
 
-exam_score 75
+exam_score = 75
 
 if exam_score >= 90:
     print('A Grade')
